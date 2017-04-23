@@ -1,2 +1,2 @@
 # pyroll
-Simple net from gross payroll calculator whowing hidden costs.
+Simple net from gross payroll calculator showing hidden costs.
