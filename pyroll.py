@@ -74,4 +74,4 @@ print(' - Suma Wszystkich Skladek ZUS Ze Srodkow Pracodawcy: ' + str(SumaWszystk
 print("\n")
 print('Calkowity Koszt Wyplaty: ' + str(CalkowityKosztWyplaty)+ ' PLN')
 print("\n")
-print("Aktualna wersja bazuje na nie koniecznie aktualnych danych. Trust no one ;-)")
+print("Aktualna wersja bazuje na nie koniecznie aktualnych danych. Trust no one ;-). It's just a test.")
