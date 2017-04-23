@@ -16,7 +16,7 @@ if (WynagrodzenieZasadnicze - KosztyUzyskaniaPrzychodu) > 0:
     Dochod = round(Decimal(WynagrodzenieZasadnicze) - KosztyUzyskaniaPrzychodu,0)
 else:
     Dochod = round(Decimal(0),0)
-ZaliczkaNaPodatek = Decimal(0.18) * Dochod    # 2)
+ZaliczkaNaPodatek = Decimal(0.18) * Decimal(Dochod)    # 2)
 MiesiecznaUlgaNaPodatek = 46.33
 if MiesiecznaUlgaNaPodatek < ZaliczkaNaPodatek:
     ZaliczkaNaPodatekPoOdjeciuUlgi = Decimal(ZaliczkaNaPodatek) - Decimal(MiesiecznaUlgaNaPodatek)
@@ -73,3 +73,5 @@ print(' - Suma Wszystkich Skladek ZUS Ze Srodkow Pracownika: ' + str(SumaWszystk
 print(' - Suma Wszystkich Skladek ZUS Ze Srodkow Pracodawcy: ' + str(SumaWszystkichSkladekZUSZeSrodkowPracodawcy)+ ' PLN')
 print("\n")
 print('Calkowity Koszt Wyplaty: ' + str(CalkowityKosztWyplaty)+ ' PLN')
+print("\n")
+print("Aktualna wersja bazuje na nie koniecznie aktualnych danych. Trust no one ;-)")
