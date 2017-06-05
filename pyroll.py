@@ -8,7 +8,8 @@ getcontext().rounding = ROUND_HALF_UP
 
 # Input base value for calculations:
 if len(argv) == 2:
-    KWOTA = int(argv[1])
+    KWOTA = Decimal(int(argv[1]))
+    print("Kwota brutto: " + str(KWOTA))
 else:
     KWOTA = Decimal(input("\n Podaj kwote brutto (w PLN): "))
 
@@ -112,4 +113,4 @@ print(' - Suma wszystkich składek ZUS ze środków pracodawcy: ' + str(SumaWszy
 print("\n")
 print('Całkowity koszt wypłaty: ' + str(CalkowityKosztWyplaty)+ ' PLN')
 print("\n")
-print("Aktualna wersja bazuje na nie koniecznie aktualnych danych. Trust no one ;-). It's just a test.")
+print("Aktualna wersja bazuje na nie koniecznie aktualnych danych. Trust no one ;-).")
