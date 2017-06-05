@@ -1,13 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """This module calculates all the money you won't see after your pay-check."""
-
+from sys import argv
 from decimal import getcontext, Decimal, ROUND_HALF_UP
 getcontext().prec = 5
 getcontext().rounding = ROUND_HALF_UP
 
 # Input base value for calculations:
-KWOTA = Decimal(input("\n Podaj kwote brutto (w PLN): "))
+if len(argv) == 2:
+    KWOTA = int(argv[1])
+else:
+    KWOTA = Decimal(input("\n Podaj kwote brutto (w PLN): "))
 
 # Calculate variables based on input:
 UbezpieczenieEmerytalne = Decimal(0.0976) * Decimal(KWOTA)
